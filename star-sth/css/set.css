@@ -1,0 +1,334 @@
+.div1 {
+	/*border:1px solid blue;*/
+	width: 1000px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+#logo {
+	/*border:1px solid red;*/
+	width: 220px;
+	height: 98px;
+	float: left;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#group {
+	/*border:1px solid red;*/
+	width: 400px;
+	height: 98px;
+	float: right;
+	text-align: center;
+}
+
+#login {
+	background-color: white;
+	border-style: solid;
+	border-width: thin;
+	border-radius: 0.3rem;
+	width: 60px;
+	height: 30px;
+	font-size: 16px;
+}
+
+#reg {
+	background-color: white;
+	border-style: solid;
+	border-width: thin;
+	border-radius: 0.3rem;
+	width: 60px;
+	height: 30px;
+	font-size: 16px;
+}
+
+#search {
+	background-color: white;
+	border-color: lightgrey;
+	border-style: solid;
+	border-width: thin;
+	border-top-left-radius: 0.3rem;
+	border-bottom-left-radius: 0.3rem;
+	width: auto;
+	height: 30px;
+	/*background-image: url(img/search.png);
+				background-repeat: no-repeat;
+				background-position: right;*/
+}
+
+#searchicon {
+	border-top-right-radius: 0.3rem;
+	border-bottom-right-radius: 0.3rem;
+	padding-top: 1px;
+	margin: 0 auto;
+	float: right;
+}
+
+#all {
+	/*border:1px solid yellow;*/
+	display: inline-block;
+	padding-top: 8%;
+	padding-bottom: 8%;
+	/*margin:auto auto;*/
+}
+
+#nav {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+ul {
+	margin: 0 auto;
+	list-style: none;
+	width: auto;
+	padding: 0;
+	width: 1000px;
+}
+
+ul:after {
+	/*解决浮动塌陷*/
+	content: "";
+	display: block;
+	height: 0px;
+	width: 0px;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+ul li {
+	float: left;
+	width: 9.09%;
+	background-color: purple;
+}
+
+#searchicon,
+#login,
+#reg,
+ul li:hover {
+	cursor: pointer;
+	/*设置鼠标滑过的鼠标形状为小手*/
+}
+
+ul li:hover {
+	background-color: plum;
+}
+
+ul li a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	padding: 8px;
+}
+
+#star {
+	/*border:1px solid red;*/
+	height: 94px;
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#star div {
+	/*border:1px solid blue;*/
+	height: 94px;
+	width: 83px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition-duration: 0.3s;
+	/*设置动画时间为0.3秒*/
+	transition-property: transform;
+}
+
+#star>div:hover {
+	cursor: pointer;
+	/*设置鼠标滑过的鼠标形状为小手*/
+	transform: translateX(-2px);
+	/*向左平移1px*/
+}
+
+#d1 {
+	background-image: url(../img/星运网_05.gif);
+}
+
+#d2 {
+	background-image: url(../img/星运网_06.gif);
+}
+
+#d3 {
+	background-image: url(../img/星运网_07.gif);
+}
+
+#d4 {
+	background-image: url(../img/星运网_08.gif);
+}
+
+#d5 {
+	background-image: url(../img/星运网_09.gif);
+}
+
+#d6 {
+	background-image: url(../img/星运网_10.gif);
+}
+
+#d7 {
+	background-image: url(../img/星运网_11.gif);
+}
+
+#d8 {
+	background-image: url(../img/星运网_12.gif);
+}
+
+#d9 {
+	background-image: url(../img/星运网_13.gif);
+}
+
+#d10 {
+	background-image: url(../img/星运网_14.gif);
+}
+
+#d11 {
+	background-image: url(../img/星运网_15.gif);
+}
+
+#d12 {
+	background-image: url(../img/星运网_16.gif);
+}
+
+.c1 {
+	/*border:1px solid blue;*/
+	height: 400px;
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#picleft {
+	/*border:1px solid red;*/
+	height: 400px;
+	width: 294px;
+	margin: 0 auto;
+	text-align: center;
+	float: left;
+	background-image: url(../img/星运网_19.png);
+	background-repeat: no-repeat;
+}
+
+#col {
+	border: 1px solid lightgrey;
+	height: 392px;
+	width: 370px;
+	margin: 1px auto;
+	text-align: center;
+	float: left;
+}
+
+table {
+	/*border:1px solid blue;*/
+	font-size: 14px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#col tr {
+	height: 37px;
+}
+
+.dot {
+	border-bottom: dashed;
+	border-bottom-color: lightgrey;
+	border-bottom-width: thin;
+}
+
+#col th {
+	color: mediumpurple;
+	font-size: 22px;
+}
+
+#picright {
+	border: 3px solid plum;
+	height: 375px;
+	width: 300px;
+	margin: 0 auto;
+	text-align: left;
+	float: right;
+	font-size: 14px;
+	color: purple;
+}
+
+#picright table a {
+	text-decoration: none;
+	/*font-size: 14px;*/
+}
+
+#picright table {
+	/*border:1px solid red;*/
+	width: 300px;
+	font-size: 12px;
+}
+
+.c2,
+.c3,
+.c4 {
+	/*border:1px solid blue;*/
+	height: 280px;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.cdiv {
+	/*九个div里的左边六个*/
+	border: 1px dotted lightgray;
+	height: 278px;
+	width: 331px;
+	margin: 0 auto;
+	/*text-align: center;*/
+	float: left;
+	border-radius: 0.4rem;
+}
+
+.cdivright {
+	/*九个div里的右边三个*/
+	border: 1px dotted lightgray;
+	height: 278px;
+	width: 331px;
+	margin: 0 auto;
+	/*text-align: center;*/
+	float: right;
+	border-radius: 0.4rem;
+}
+
+.tab {
+	/*九个表格*/
+	/*border:1px solid green;*/
+	width: 330px;
+	height: 276px;
+}
+
+.title {
+	font-size: 15px;
+	background-color: lightgrey;
+	text-align: left;
+}
+
+.f {
+	float: left;
+	width: 10%;
+	background-color: transparent;
+}
+
+.f a {
+	color: purple;
+	font-size: 14px;
+}
+
+#copy {
+	font-size: 10px;
+	margin: 0 auto;
+	width: 1000px;
+	text-align: center;
+	padding-top: 10px;
+}
