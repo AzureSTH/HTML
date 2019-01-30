@@ -1,0 +1,132 @@
+.top_guid{
+	/*border: 1px solid black;*/
+	width: 992px;
+	height: 100px;
+	float: left;
+}
+.top_list{
+	width:696px;
+	height:100px;
+	float:left;
+}
+
+.top_list_ul{
+	list-style: none;
+	width: 696px;
+	padding-left: 18px;
+}
+.top_list_ul:after{
+	content: "";
+	display: block;
+	overflow: hidden;
+	clear: both;
+	visibility: hidden;
+}
+.top_list_ul li:hover{
+	color: #ff6700;
+	cursor: pointer;
+}
+.top_list_ul li{
+	float: left;
+	width: 68px;
+	height: 68px;
+	font-size: 17px;
+	line-height: 30px;
+	margin-top: 32px;
+	text-align: center;
+}
+.top_list_ul li ul{
+	/*border: 1px solid red;*/
+	position: absolute;
+	min-width: 1226px;
+	height: 250px;
+	display: none;
+	z-index: 6;
+}
+.top_list_ul li:hover ul{
+	display: block;
+	color: #000000;
+}
+.top_list_ul_li_ul1{
+	margin-left: -253px;
+	margin-top: 35px;
+	background-color: white;
+	padding-left: 0px!important;
+}
+.top_list_ul_li_ul2{
+	margin-left: -321px;
+	margin-top: 35px;
+	background-color: white;
+	padding-left: 0px!important;
+}
+.top_list_ul_li_ul3{
+	margin-left: -406px;
+	margin-top: 35px;
+	background-color: white;
+	padding-left: 0px!important;
+}
+.top_list_ul_li_ul4{
+	margin-left: -441px;
+	margin-top: 35px;
+	background-color: white;
+	padding-left: 0px!important;
+}
+.top_list_ul_li_ul5{
+	margin-left: -543px;
+	margin-top: 35px;
+	background-color: white;
+	padding-left: 0px!important;
+}
+.top_list_ul_li_ul6{
+	margin-left: -578px;
+	margin-top: 35px;
+	background-color: white;
+	padding-left: 0px!important;
+}
+.top_list_ul_li_ul7{
+	margin-left: -660px;
+	margin-top: 35px;
+	background-color: white;
+	padding-left: 0px!important;
+}
+.top_list_ul_li_ul8{
+	margin-left: -717px;
+	margin-top: 35px;
+	background-color: white;
+	padding-left: 0px!important;
+}
+.top_list_ul_li_ul table {
+	position: absolute;
+	z-index: 6;
+	width: 1226px;
+	height: 250px;
+	
+}
+.top_list_ul li ul table tr td{
+	width: 204px;
+	height: 250px;
+}
+.main_field_tsyle{
+	padding:.35em .625em .75em;
+	margin:0 2px;
+	border-right:2px solid silver;
+}
+.main_field_tsyle2{
+	padding:.35em .625em .75em;
+	margin:0 2px;
+}
+.main_img_size{
+	width: 154px;
+}
+.main_p_style{
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color:black;
+	cursor: pointer;
+}
+.main_p_style2{
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color:#ff6700;
+	margin-top: -10px;
+}
