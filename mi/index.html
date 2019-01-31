@@ -1,0 +1,2453 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/top_list.css" />
+		<link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css" />
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<style>
+
+		</style>
+	</head>
+
+	<body>
+		<nav class="topbar" role="navigation">
+			<div class="container">
+				<div class="topbarleft">
+					<ul class="breadcrumb">
+						<li>
+							<a href="index.html">小米商城</a>
+						</li>
+						<li>
+							<a href="https://www.miui.com/" target="_blank">MIUI</a>
+						</li>
+						<li>
+							<a href="https://iot.mi.com/index.html">loT</a>
+						</li>
+						<li>
+							<a href="https://i.mi.com/" target="_blank">云服务</a>
+						</li>
+						<li>
+							<a href="https://jr.mi.com/?from=micom" target="_blank">金融</a>
+						</li>
+						<li>
+							<a href="https://youpin.mi.com/" target="_blank">有品</a>
+						</li>
+						<li>
+							<a href="https://xiaoai.mi.com/" target="_blank">小爱开放平台</a>
+						</li>
+						<li>
+							<a href="https://b.mi.com/" target="_blank">政企服务</a>
+						</li>
+						<li>
+							<a href="https://www.mi.com/aptitude/list/?id=41" target="_blank">资质证照</a>
+						</li>
+						<li>
+							<a href="https://www.mi.com/aptitude/list/" target="_blank">协议规则</a>
+						</li>
+						<li id="app">
+							<a>下载app</a>
+							<ul id="appdrop" class="dropdown-menu" role="menu">
+								<li role="presentation"></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">Select Region</a>
+						</li>
+					</ul>
+				</div>
+				<div class="topbarcart dropdown">
+					<ul class="btn dropdown-toggle" id="cart" data-toggle="dropdown" onclick="cart()"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;购物车
+						<ul class="dropdown-menu" role="menu" aria-labelledby="cart">
+							<!--<li role="presentation" class="dropdown-header">下拉菜单标题</li>-->
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#">购物车中还没有商品，赶紧选购吧！</a>
+							</li>
+						</ul>
+					</ul>
+				</div>
+				<div class="topbarmes">
+					<ul class="breadcrumb">
+						<li>
+							<a href="">登录</a>
+						</li>
+						<li>
+							<a href="">注册</a>
+						</li>
+						<li>
+							<a href="">消息通知</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="header">
+			<div class="container">
+				<img src="img/milogo.png" style="float:left">
+				<div class="top_guid">
+					<div class="top_list">
+						<ul class="top_list_ul">
+							<li>
+								小米手机
+								<ul class="top_list_ul_li_ul1">
+									<table>
+										<tr>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/mix3-320.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米MIX3</p>
+												<p class="main_p_style2">3299元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-220-mi8.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米8</p>
+												<p class="main_p_style2">2699元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-miplay-1.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米Play</p>
+												<p class="main_p_style2">1099元</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle2">
+													<img src="img/pc-320-220-mi8se.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米SE</p>
+												<p class="main_p_style2">1699元起</p>
+											</td>
+											<td class=" ">
+
+											</td>
+											<td>
+
+											</td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li style="width:85px;">
+								红米
+								<ul class="top_list_ul_li_ul2">
+									<table>
+										<tr>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/mix3-320.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米MIX3</p>
+												<p class="main_p_style2">3299元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-220-mi8.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米8</p>
+												<p class="main_p_style2">2699元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-miplay-1.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米Play</p>
+												<p class="main_p_style2">1099元</p>
+											</td>
+											<td class=" ">
+												
+											</td>
+											<td class=" ">
+
+											</td>
+											<td>
+
+											</td>
+										</tr>
+									</table>
+								</ul>
+
+							</li>
+							<li style="width:35px;">
+								电视
+								<ul class="top_list_ul_li_ul3">
+									<table>
+										<tr>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/mix3-320.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米MIX3</p>
+												<p class="main_p_style2">3299元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-220-mi8.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米8</p>
+												<p class="main_p_style2">2699元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle2">
+													<img src="img/pc-320-220-mi8se.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米SE</p>
+												<p class="main_p_style2">1699元起</p>
+											</td>
+											<td class=" ">
+												
+											</td>
+											<td class=" ">
+
+											</td>
+											<td>
+
+											</td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li style="width:102px;">
+								笔记本
+								<ul class="top_list_ul_li_ul4">
+									<table>
+										<tr>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/mix3-320.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米MIX3</p>
+												<p class="main_p_style2">3299元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-220-mi8.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米8</p>
+												<p class="main_p_style2">2699元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-miplay-1.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米Play</p>
+												<p class="main_p_style2">1099元</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle2">
+													<img src="img/pc-320-220-mi8se.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米SE</p>
+												<p class="main_p_style2">1699元起</p>
+											</td>
+											<td class=" ">
+
+											</td>
+											<td>
+
+											</td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li style="width:35px;">
+								家电
+								<ul class="top_list_ul_li_ul5">
+									<table>
+										<tr>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/mix3-320.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米MIX3</p>
+												<p class="main_p_style2">3299元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-220-mi8.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米8</p>
+												<p class="main_p_style2">2699元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-miplay-1.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米Play</p>
+												<p class="main_p_style2">1099元</p>
+											</td>
+											<td class=" ">
+												
+											</td>
+											<td class=" ">
+
+											</td>
+											<td>
+
+											</td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li style="width:82px;">
+								新品
+								<ul class="top_list_ul_li_ul6">
+									<table>
+										<tr>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/mix3-320.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米MIX3</p>
+												<p class="main_p_style2">3299元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-220-mi8.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米8</p>
+												<p class="main_p_style2">2699元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-miplay-1.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米Play</p>
+												<p class="main_p_style2">1099元</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle2">
+													<img src="img/pc-320-220-mi8se.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米SE</p>
+												<p class="main_p_style2">1699元起</p>
+											</td>
+											<td class=" ">
+
+											</td>
+											<td>
+
+											</td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li style="width:57px;">
+								路由器
+								<ul class="top_list_ul_li_ul7">
+									<table>
+										<tr>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/mix3-320.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米MIX3</p>
+												<p class="main_p_style2">3299元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-220-mi8.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米8</p>
+												<p class="main_p_style2">2699元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-miplay-1.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米Play</p>
+												<p class="main_p_style2">1099元</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle2">
+													<img src="img/pc-320-220-mi8se.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米SE</p>
+												<p class="main_p_style2">1699元起</p>
+											</td>
+											<td class=" ">
+
+											</td>
+											<td>
+
+											</td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li style="width:111px;">
+								智能硬件
+								<ul class="top_list_ul_li_ul8">
+									<table>
+										<tr>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/mix3-320.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米MIX3</p>
+												<p class="main_p_style2">3299元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-220-mi8.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米8</p>
+												<p class="main_p_style2">2699元起</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle">
+													<img src="img/pc-320-miplay-1.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米Play</p>
+												<p class="main_p_style2">1099元</p>
+											</td>
+											<td class=" ">
+												<fieldset class="main_field_tsyle2">
+													<img src="img/pc-320-220-mi8se.png" class="main_img_size" />
+												</fieldset>
+												<p class="main_p_style">小米SE</p>
+												<p class="main_p_style2">1699元起</p>
+											</td>
+											<td class=" ">
+
+											</td>
+											<td>
+
+											</td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li style="width:35px;">
+								服务
+							</li>
+							<li>
+								社区
+							</li>
+						</ul>
+					</div>
+					<div class="search">
+						<input  type="search">
+						<div class="searchsubmit">
+							<input type="submit" value="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="home container">
+			<div class="screen-recom">
+				<div id="screen">
+					<div class="vnav">
+						<ul class="catalog">
+							<li>
+								<a class="catalogname" href="#">手机 电话卡</a>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+								<ul class="ul1">
+									<table>
+										<tr>
+											<td>
+												<img src="img/mix3-80.png">
+												<a href="">小米MIX 3</a>
+											</td>
+											<td>
+												<img src="img/max3-80-80.png">
+												<a href="">小米Max 3</a>
+											</td>
+											<td>
+												<img src="img/666666.png">
+												<a href="">红米6</a>
+											</td>
+											<td>
+												<img src="img/mimobile.jpg">
+												<a href="">小米移动 电话卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/qingchun-80.png">
+												<a href="">小米8 青春版</a>
+											</td>
+											<td>
+												<img src="img/80808080808080.jpg">
+												<a href="">小米6X</a>
+											</td>
+											<td>
+												<img src="img/6AAAA.png">
+												<a href="">红米6A</a>
+											</td>
+											<td>
+												<img src="img/weixiu80-80.png">
+												<a href="">手机上门维修</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/pingmu-80.png">
+												<a href="">小米8 屏幕指纹版</a>
+											</td>
+											<td>
+												<img src="img/heishahelo-80.png">
+												<a href="">黑鲨游戏手机 Helo</a>
+											</td>
+											<td>
+												<img src="img/note5-80-80.png">
+												<a href="">红米Note 5</a>
+											</td>
+											<td>
+												<img src="img/yunfuwu.jpg">
+												<a href="">云服务空间月卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8-80.png">
+												<a href="">小米8</a>
+											</td>
+											<td>
+												<img src="img/heisha-80.png">
+												<a href="">黑鲨游戏手机</a>
+											</td>
+											<td>
+												<img src="img/80.jpg">
+												<a href="">移动4G专区</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8se-80.png">
+												<a href="">小米8 SE</a>
+											</td>
+											<td>
+												<img src="img/note780-80.png">
+												<a href="">红米Note 7</a>
+											</td>
+											<td>
+												<img src="img/compare.jpg">
+												<a href="">对比手机</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/mix2s80-80white.png">
+												<a href="">小米MIX 2S</a>
+											</td>
+											<td>
+												<img src="img/6pro140-140.png">
+												<a href="">红米6 Pro</a>
+											</td>
+											<td>
+												<img src="img/mifenka-1.jpg">
+												<a href="">米粉卡 月租卡</a>
+											</td>
+											<td></td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li>
+								<a class="catalogname" href="#">电视 盒子</a>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+								<ul class="ul2">
+									<table>
+										<tr>
+											<td>
+												<img src="img/mijiajiguang4k.jpg">
+												<a href="">米家激光投影电视</a>
+											</td>
+											<td>
+												<img src="img/65120_120.png">
+												<a href="">小米电视4A 65英寸</a>
+											</td>
+											<td>
+												<img src="img/TV4X-55.png">
+												<a href="">小米电视4X 55英寸</a>
+											</td>
+											<td>
+												<img src="img/TV4s-55xin.jpg">
+												<a href="">小米电视4S 55英寸</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/TV4A-32.png">
+												<a href="">小米电视4A 32英寸</a>
+											</td>
+											<td>
+												<img src="img/TV4C-32.png">
+												<a href="">小米电视4C 32英寸</a>
+											</td>
+											<td>
+												<img src="img/TVTYB.png">
+												<a href="">小米电视 体育版</a>
+											</td>
+											<td>
+												<img src="img/TV4S-55Q.png">
+												<a href="">小米电视4S 55英寸曲面</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/TV4A-43QC.png">
+												<a href="">小米电视4A 43英寸青春版</a>
+											</td>
+											<td>
+												<img src="img/4c-40.jpg">
+												<a href="">小米电视4C 40英寸</a>
+											</td>
+											<td>
+												<img src="img/TV4-55.png">
+												<a href="">小米电视4 55英寸</a>
+											</td>
+											<td>
+												<img src="img/TV4S-65.png">
+												<a href="">小米电视4S 65英寸</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/TV4A-50.png">
+												<a href="">小米电视4A 50英寸</a>
+											</td>
+											<td>
+												<img src="img/TV4C-43.png">
+												<a href="">小米电视4C 43英寸</a>
+											</td>
+											<td>
+												<img src="img/65yiti.jpg">
+												<a href="">小米电视4 65英寸旗舰版</a>
+											</td>
+											<td>
+												<img src="img/TV4S-65PRO.png">
+												<a href="">小米电视4S 65英寸PRO</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/55120120.png">
+												<a href="">小米电视4A 55英寸</a>
+											</td>
+											<td>
+												<img src="img/TV4C-50.png">
+												<a href="">小米电视4C 50英寸</a>
+											</td>
+											<td>
+												<img src="img/TV4S-32.png">
+												<a href="">小米电视4S 32英寸</a>
+											</td>
+											<td>
+												<img src="img/4s75xin.jpg">
+												<a href="">小米电视4S 75英寸</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/TV4A-58-x.png">
+												<a href="">小米电视4A 58英寸</a>
+											</td>
+											<td>
+												<img src="img/TV4X-43xin.png">
+												<a href="">小米电视4X 43英寸</a>
+											</td>
+											<td>
+												<img src="img/TV4S-50.png">
+												<a href="">小米电视4S 50英寸</a>
+											</td>
+											<td>
+												<img src="img/hezibai480_80.jpg">
+												<a href="">小米盒子</a>
+											</td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li>
+								<a class="catalogname" href="#">笔记本 平板</a>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+								<ul class="ul3">
+									<table>
+										<tr>
+											<td>
+												<img src="img/mix3-80.png">
+												<a href="">小米MIX 3</a>
+											</td>
+											<td>
+												<img src="img/max3-80-80.png">
+												<a href="">小米Max 3</a>
+											</td>
+											<td>
+												<img src="img/666666.png">
+												<a href="">红米6</a>
+											</td>
+											<td>
+												<img src="img/mimobile.jpg">
+												<a href="">小米移动 电话卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/qingchun-80.png">
+												<a href="">小米8 青春版</a>
+											</td>
+											<td>
+												<img src="img/80808080808080.jpg">
+												<a href="">小米6X</a>
+											</td>
+											<td>
+												<img src="img/6AAAA.png">
+												<a href="">红米6A</a>
+											</td>
+											<td>
+												<img src="img/weixiu80-80.png">
+												<a href="">手机上门维修</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/pingmu-80.png">
+												<a href="">小米8 屏幕指纹版</a>
+											</td>
+											<td>
+												<img src="img/heishahelo-80.png">
+												<a href="">黑鲨游戏手机 Helo</a>
+											</td>
+											<td>
+												<img src="img/note5-80-80.png">
+												<a href="">红米Note 5</a>
+											</td>
+											<td>
+												<img src="img/yunfuwu.jpg">
+												<a href="">云服务空间月卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8-80.png">
+												<a href="">小米8</a>
+											</td>
+											<td>
+												<img src="img/heisha-80.png">
+												<a href="">黑鲨游戏手机</a>
+											</td>
+											<td>
+												<img src="img/80.jpg">
+												<a href="">移动4G专区</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8se-80.png">
+												<a href="">小米8 SE</a>
+											</td>
+											<td>
+												<img src="img/note780-80.png">
+												<a href="">红米Note 7</a>
+											</td>
+											<td>
+												<img src="img/compare.jpg">
+												<a href="">对比手机</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/mix2s80-80white.png">
+												<a href="">小米MIX 2S</a>
+											</td>
+											<td>
+												<img src="img/6pro140-140.png">
+												<a href="">红米6 Pro</a>
+											</td>
+											<td>
+												<img src="img/mifenka-1.jpg">
+												<a href="">米粉卡 月租卡</a>
+											</td>
+											<td></td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li>
+								<a class="catalogname" href="#">家电 插线板</a>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+								<ul class="ul4">
+									<table>
+										<tr>
+											<td>
+												<img src="img/mix3-80.png">
+												<a href="">小米MIX 3</a>
+											</td>
+											<td>
+												<img src="img/max3-80-80.png">
+												<a href="">小米Max 3</a>
+											</td>
+											<td>
+												<img src="img/666666.png">
+												<a href="">红米6</a>
+											</td>
+											<td>
+												<img src="img/mimobile.jpg">
+												<a href="">小米移动 电话卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/qingchun-80.png">
+												<a href="">小米8 青春版</a>
+											</td>
+											<td>
+												<img src="img/80808080808080.jpg">
+												<a href="">小米6X</a>
+											</td>
+											<td>
+												<img src="img/6AAAA.png">
+												<a href="">红米6A</a>
+											</td>
+											<td>
+												<img src="img/weixiu80-80.png">
+												<a href="">手机上门维修</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/pingmu-80.png">
+												<a href="">小米8 屏幕指纹版</a>
+											</td>
+											<td>
+												<img src="img/heishahelo-80.png">
+												<a href="">黑鲨游戏手机 Helo</a>
+											</td>
+											<td>
+												<img src="img/note5-80-80.png">
+												<a href="">红米Note 5</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8-80.png">
+												<a href="">小米8</a>
+											</td>
+											<td>
+												<img src="img/heisha-80.png">
+												<a href="">黑鲨游戏手机</a>
+											</td>
+											<td>
+												<img src="img/80.jpg">
+												<a href="">移动4G专区</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8se-80.png">
+												<a href="">小米8 SE</a>
+											</td>
+											<td>
+												<img src="img/note780-80.png">
+												<a href="">红米Note 7</a>
+											</td>
+											<td>
+												<img src="img/compare.jpg">
+												<a href="">对比手机</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/mix2s80-80white.png">
+												<a href="">小米MIX 2S</a>
+											</td>
+											<td>
+												<img src="img/6pro140-140.png">
+												<a href="">红米6 Pro</a>
+											</td>
+											<td>
+												<img src="img/mifenka-1.jpg">
+												<a href="">米粉卡 月租卡</a>
+											</td>
+											<td></td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li>
+								<a class="catalogname" href="#">出行 穿戴</a>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+								<ul class="ul5">
+									<table>
+										<tr>
+											<td>
+												<img src="img/mix3-80.png">
+												<a href="">小米MIX 3</a>
+											</td>
+											<td>
+												<img src="img/max3-80-80.png">
+												<a href="">小米Max 3</a>
+											</td>
+											<td>
+												<img src="img/666666.png">
+												<a href="">红米6</a>
+											</td>
+											<td>
+												<img src="img/mimobile.jpg">
+												<a href="">小米移动 电话卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/qingchun-80.png">
+												<a href="">小米8 青春版</a>
+											</td>
+											<td>
+												<img src="img/80808080808080.jpg">
+												<a href="">小米6X</a>
+											</td>
+											<td>
+												<img src="img/6AAAA.png">
+												<a href="">红米6A</a>
+											</td>
+											<td>
+												<img src="img/weixiu80-80.png">
+												<a href="">手机上门维修</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/pingmu-80.png">
+												<a href="">小米8 屏幕指纹版</a>
+											</td>
+											<td>
+												<img src="img/heishahelo-80.png">
+												<a href="">黑鲨游戏手机 Helo</a>
+											</td>
+											<td>
+												<img src="img/note5-80-80.png">
+												<a href="">红米Note 5</a>
+											</td>
+											<td>
+												<img src="img/yunfuwu.jpg">
+												<a href="">云服务空间月卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8-80.png">
+												<a href="">小米8</a>
+											</td>
+											<td>
+												<img src="img/heisha-80.png">
+												<a href="">黑鲨游戏手机</a>
+											</td>
+											<td>
+												<img src="img/80.jpg">
+												<a href="">移动4G专区</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8se-80.png">
+												<a href="">小米8 SE</a>
+											</td>
+											<td>
+												<img src="img/note780-80.png">
+												<a href="">红米Note 7</a>
+											</td>
+											<td>
+												<img src="img/compare.jpg">
+												<a href="">对比手机</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/mix2s80-80white.png">
+												<a href="">小米MIX 2S</a>
+											</td>
+											<td>
+												<img src="img/6pro140-140.png">
+												<a href="">红米6 Pro</a>
+											</td>
+											<td>
+												<img src="img/mifenka-1.jpg">
+												<a href="">米粉卡 月租卡</a>
+											</td>
+											<td></td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li>
+								<a class="catalogname" href="#">智能 路由器</a>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+								<ul class="ul6">
+									<table>
+										<tr>
+											<td>
+												<img src="img/mix3-80.png">
+												<a href="">小米MIX 3</a>
+											</td>
+											<td>
+												<img src="img/max3-80-80.png">
+												<a href="">小米Max 3</a>
+											</td>
+											<td>
+												<img src="img/666666.png">
+												<a href="">红米6</a>
+											</td>
+											<td>
+												<img src="img/mimobile.jpg">
+												<a href="">小米移动 电话卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/qingchun-80.png">
+												<a href="">小米8 青春版</a>
+											</td>
+											<td>
+												<img src="img/80808080808080.jpg">
+												<a href="">小米6X</a>
+											</td>
+											<td>
+												<img src="img/6AAAA.png">
+												<a href="">红米6A</a>
+											</td>
+											<td>
+												<img src="img/weixiu80-80.png">
+												<a href="">手机上门维修</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/pingmu-80.png">
+												<a href="">小米8 屏幕指纹版</a>
+											</td>
+											<td>
+												<img src="img/heishahelo-80.png">
+												<a href="">黑鲨游戏手机 Helo</a>
+											</td>
+											<td>
+												<img src="img/note5-80-80.png">
+												<a href="">红米Note 5</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8-80.png">
+												<a href="">小米8</a>
+											</td>
+											<td>
+												<img src="img/heisha-80.png">
+												<a href="">黑鲨游戏手机</a>
+											</td>
+											<td>
+												<img src="img/80.jpg">
+												<a href="">移动4G专区</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8se-80.png">
+												<a href="">小米8 SE</a>
+											</td>
+											<td>
+												<img src="img/note780-80.png">
+												<a href="">红米Note 7</a>
+											</td>
+											<td>
+												<img src="img/compare.jpg">
+												<a href="">对比手机</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/mix2s80-80white.png">
+												<a href="">小米MIX 2S</a>
+											</td>
+											<td>
+												<img src="img/6pro140-140.png">
+												<a href="">红米6 Pro</a>
+											</td>
+											<td>
+												<img src="img/mifenka-1.jpg">
+												<a href="">米粉卡 月租卡</a>
+											</td>
+											<td></td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li>
+								<a class="catalogname" href="#">电源 配件</a>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+								<ul class="ul7">
+									<table>
+										<tr>
+											<td>
+												<img src="img/mix3-80.png">
+												<a href="">小米MIX 3</a>
+											</td>
+											<td>
+												<img src="img/max3-80-80.png">
+												<a href="">小米Max 3</a>
+											</td>
+											<td>
+												<img src="img/666666.png">
+												<a href="">红米6</a>
+											</td>
+											<td>
+												<img src="img/mimobile.jpg">
+												<a href="">小米移动 电话卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/qingchun-80.png">
+												<a href="">小米8 青春版</a>
+											</td>
+											<td>
+												<img src="img/80808080808080.jpg">
+												<a href="">小米6X</a>
+											</td>
+											<td>
+												<img src="img/6AAAA.png">
+												<a href="">红米6A</a>
+											</td>
+											<td>
+												<img src="img/weixiu80-80.png">
+												<a href="">手机上门维修</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/pingmu-80.png">
+												<a href="">小米8 屏幕指纹版</a>
+											</td>
+											<td>
+												<img src="img/heishahelo-80.png">
+												<a href="">黑鲨游戏手机 Helo</a>
+											</td>
+											<td>
+												<img src="img/note5-80-80.png">
+												<a href="">红米Note 5</a>
+											</td>
+											<td>
+												<img src="img/yunfuwu.jpg">
+												<a href="">云服务空间月卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8-80.png">
+												<a href="">小米8</a>
+											</td>
+											<td>
+												<img src="img/heisha-80.png">
+												<a href="">黑鲨游戏手机</a>
+											</td>
+											<td>
+												<img src="img/80.jpg">
+												<a href="">移动4G专区</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8se-80.png">
+												<a href="">小米8 SE</a>
+											</td>
+											<td>
+												<img src="img/note780-80.png">
+												<a href="">红米Note 7</a>
+											</td>
+											<td>
+												<img src="img/compare.jpg">
+												<a href="">对比手机</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/mix2s80-80white.png">
+												<a href="">小米MIX 2S</a>
+											</td>
+											<td>
+												<img src="img/6pro140-140.png">
+												<a href="">红米6 Pro</a>
+											</td>
+											<td>
+												<img src="img/mifenka-1.jpg">
+												<a href="">米粉卡 月租卡</a>
+											</td>
+											<td></td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li>
+								<a class="catalogname" href="#">健康 儿童</a>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+								<ul class="ul8">
+									<table>
+										<tr>
+											<td>
+												<img src="img/mix3-80.png">
+												<a href="">小米MIX 3</a>
+											</td>
+											<td>
+												<img src="img/max3-80-80.png">
+												<a href="">小米Max 3</a>
+											</td>
+											<td>
+												<img src="img/666666.png">
+												<a href="">红米6</a>
+											</td>
+											<td>
+												<img src="img/mimobile.jpg">
+												<a href="">小米移动 电话卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/qingchun-80.png">
+												<a href="">小米8 青春版</a>
+											</td>
+											<td>
+												<img src="img/80808080808080.jpg">
+												<a href="">小米6X</a>
+											</td>
+											<td>
+												<img src="img/6AAAA.png">
+												<a href="">红米6A</a>
+											</td>
+											<td>
+												<img src="img/weixiu80-80.png">
+												<a href="">手机上门维修</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/pingmu-80.png">
+												<a href="">小米8 屏幕指纹版</a>
+											</td>
+											<td>
+												<img src="img/heishahelo-80.png">
+												<a href="">黑鲨游戏手机 Helo</a>
+											</td>
+											<td>
+												<img src="img/note5-80-80.png">
+												<a href="">红米Note 5</a>
+											</td>
+											<td>
+												<img src="img/yunfuwu.jpg">
+												<a href="">云服务空间月卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8-80.png">
+												<a href="">小米8</a>
+											</td>
+											<td>
+												<img src="img/heisha-80.png">
+												<a href="">黑鲨游戏手机</a>
+											</td>
+											<td>
+												<img src="img/80.jpg">
+												<a href="">移动4G专区</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8se-80.png">
+												<a href="">小米8 SE</a>
+											</td>
+											<td>
+												<img src="img/note780-80.png">
+												<a href="">红米Note 7</a>
+											</td>
+											<td>
+												<img src="img/compare.jpg">
+												<a href="">对比手机</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/mix2s80-80white.png">
+												<a href="">小米MIX 2S</a>
+											</td>
+											<td>
+												<img src="img/6pro140-140.png">
+												<a href="">红米6 Pro</a>
+											</td>
+											<td>
+												<img src="img/mifenka-1.jpg">
+												<a href="">米粉卡 月租卡</a>
+											</td>
+											<td></td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li>
+								<a class="catalogname" href="#">耳机 音箱</a>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+								<ul class="ul9">
+									<table>
+										<tr>
+											<td>
+												<img src="img/mix3-80.png">
+												<a href="">小米MIX 3</a>
+											</td>
+											<td>
+												<img src="img/max3-80-80.png">
+												<a href="">小米Max 3</a>
+											</td>
+											<td>
+												<img src="img/666666.png">
+												<a href="">红米6</a>
+											</td>
+											<td>
+												<img src="img/mimobile.jpg">
+												<a href="">小米移动 电话卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/qingchun-80.png">
+												<a href="">小米8 青春版</a>
+											</td>
+											<td>
+												<img src="img/80808080808080.jpg">
+												<a href="">小米6X</a>
+											</td>
+											<td>
+												<img src="img/6AAAA.png">
+												<a href="">红米6A</a>
+											</td>
+											<td>
+												<img src="img/weixiu80-80.png">
+												<a href="">手机上门维修</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/pingmu-80.png">
+												<a href="">小米8 屏幕指纹版</a>
+											</td>
+											<td>
+												<img src="img/heishahelo-80.png">
+												<a href="">黑鲨游戏手机 Helo</a>
+											</td>
+											<td>
+												<img src="img/note5-80-80.png">
+												<a href="">红米Note 5</a>
+											</td>
+											<td>
+												<img src="img/yunfuwu.jpg">
+												<a href="">云服务空间月卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8-80.png">
+												<a href="">小米8</a>
+											</td>
+											<td>
+												<img src="img/heisha-80.png">
+												<a href="">黑鲨游戏手机</a>
+											</td>
+											<td>
+												<img src="img/80.jpg">
+												<a href="">移动4G专区</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8se-80.png">
+												<a href="">小米8 SE</a>
+											</td>
+											<td>
+												<img src="img/note780-80.png">
+												<a href="">红米Note 7</a>
+											</td>
+											<td>
+												<img src="img/compare.jpg">
+												<a href="">对比手机</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/mix2s80-80white.png">
+												<a href="">小米MIX 2S</a>
+											</td>
+											<td>
+												<img src="img/6pro140-140.png">
+												<a href="">红米6 Pro</a>
+											</td>
+											<td>
+												<img src="img/mifenka-1.jpg">
+												<a href="">米粉卡 月租卡</a>
+											</td>
+											<td></td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+							<li>
+								<a class="catalogname" href="#">生活 箱包</a>
+								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+								<ul class="ul10">
+									<table>
+										<tr>
+											<td>
+												<img src="img/mix3-80.png">
+												<a href="">小米MIX 3</a>
+											</td>
+											<td>
+												<img src="img/max3-80-80.png">
+												<a href="">小米Max 3</a>
+											</td>
+											<td>
+												<img src="img/666666.png">
+												<a href="">红米6</a>
+											</td>
+											<td>
+												<img src="img/mimobile.jpg">
+												<a href="">小米移动 电话卡</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/qingchun-80.png">
+												<a href="">小米8 青春版</a>
+											</td>
+											<td>
+												<img src="img/80808080808080.jpg">
+												<a href="">小米6X</a>
+											</td>
+											<td>
+												<img src="img/6AAAA.png">
+												<a href="">红米6A</a>
+											</td>
+											<td>
+												<img src="img/weixiu80-80.png">
+												<a href="">手机上门维修</a>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/pingmu-80.png">
+												<a href="">小米8 屏幕指纹版</a>
+											</td>
+											<td>
+												<img src="img/heishahelo-80.png">
+												<a href="">黑鲨游戏手机 Helo</a>
+											</td>
+											<td>
+												<img src="img/note5-80-80.png">
+												<a href="">红米Note 5</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8-80.png">
+												<a href="">小米8</a>
+											</td>
+											<td>
+												<img src="img/heisha-80.png">
+												<a href="">黑鲨游戏手机</a>
+											</td>
+											<td>
+												<img src="img/80.jpg">
+												<a href="">移动4G专区</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/m8se-80.png">
+												<a href="">小米8 SE</a>
+											</td>
+											<td>
+												<img src="img/note780-80.png">
+												<a href="">红米Note 7</a>
+											</td>
+											<td>
+												<img src="img/compare.jpg">
+												<a href="">对比手机</a>
+											</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/mix2s80-80white.png">
+												<a href="">小米MIX 2S</a>
+											</td>
+											<td>
+												<img src="img/6pro140-140.png">
+												<a href="">红米6 Pro</a>
+											</td>
+											<td>
+												<img src="img/mifenka-1.jpg">
+												<a href="">米粉卡 月租卡</a>
+											</td>
+											<td></td>
+										</tr>
+									</table>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id="myCarousel" class="carousel slide">
+						<!-- 轮播（Carousel）指标 -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+							<li data-target="#myCarousel" data-slide-to="4"></li>
+						</ol>
+						<!-- 轮播（Carousel）项目 -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="img/screen1.jpg" alt="First slide">
+							</div>
+							<div class="item">
+								<img src="img/screen2.jpg" alt="Second slide">
+							</div>
+							<div class="item">
+								<img src="img/screen3.jpg" alt="Third slide">
+							</div>
+							<div class="item">
+								<img src="img/screen4.jpg" alt="Fourth slide">
+							</div>
+							<div class="item">
+								<img src="img/screen5.jpg" alt="Fifth slide">
+							</div>
+						</div>
+						<!-- 轮播（Carousel）导航 -->
+						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+				<div class="recom">
+					<div class="recom1">
+						<ul>
+							<li class="rb">
+								<a href="http://www.mi.com/compare/" target="_blank">选购手机</a>
+							</li>
+							<li class="rb">
+								<a href="http://qiye.mi.com/" target="_blank">企业团购</a>
+							</li>
+							<li class="b">
+								<a href="//order.mi.com/f" target="_blank">F码通道</a>
+							</li>
+							<li class="r">
+								<a href="https://www.mi.com/mimobile/" target="_blank">米粉卡</a>
+							</li>
+							<li class="r">
+								<a href="//huanxin.mi.com" target="_blank">以旧换新</a>
+							</li>
+							<li class="">
+								<a href="http://recharge.10046.mi.com/" target="_blank">话费充值</a>
+							</li>
+						</ul>
+					</div>
+					<div class="recompic">
+						<img src="img/xmad_15381015124677_QcEGp.jpg">
+					</div>
+					<div class="recompic">
+						<img src="img/xmad_15410029988871_TdzPQ.jpg">
+					</div>
+					<div class="recompic">
+						<img src="img/xmad_15468311598919_uvtgO.jpg">
+					</div>
+				</div>
+			</div>
+			<!--以下是闪购-->
+			<div class="shinebuy">
+				<div class="title">
+					<h2>小米闪购</h2>
+					<div class="more">
+						<div>
+							<i id="left" class="leftBtn fa fa-chevron-left" aria-hidden="true" onclick="forward()"></i>
+						</div>
+						<div>
+							<i id="right" class="sty rightBtn fa fa-chevron-right" aria-hidden="true" onclick="backward()"></i>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="countdown">
+						<ul>
+							<li id="ses" class="session"></li>
+							<li>
+								<img src="img/flashpurchase.png" />
+							</li>
+							<li id="timeToEnd">距离结束还有</li>
+							<li>
+								<div id="time">
+									<div id="hour" class="box"></div>
+									<div class="dosh">:</div>
+									<div id="min" class="box"></div>
+									<div class="dosh">:</div>
+									<div id="sec" class="box"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="purchase">
+						<ul>
+							<li class="p1">
+								<div class="intro">
+									<img src="img/7c59c959d89a30ed227e8111e9e896d7.png">
+									<h3>最生活毛巾•Air（10条装）白色</h3>
+									<p>超值家庭装 轻柔速干</p>
+									<p class="price">
+										69元
+										<del>169元</del>
+									</p>
+								</div>
+							</li>
+							<li class="p2">
+								<div class="intro">
+									<img src="img/ef88f3b004a4ca83b672896925e3d9fe.png">
+									<h3>小米平板4 8英寸 WIFI版 </h3>
+									<p>4GB+64GB 金色</p>
+									<p class="price">
+										1299元
+										<del>1399元</del>
+									</p>
+								</div>
+							</li>
+							<li class="p3">
+								<div class="intro">
+									<img src="img/pms_1522033932.08715351.png">
+									<h3>小米MIX 2S 6GB+64GB 白色</h3>
+									<p>陶瓷机身 手机中的艺术品</p>
+									<p class="price">
+										2399元
+										<del>3299元</del>
+									</p>
+								</div>
+							</li>
+							<li class="p4">
+								<div class="intro">
+									<img src="img/ef88f3b004a4ca83b672896925e3d9fe.png">
+									<h3>小米平板4 8英寸 LTE版 </h3>
+									<p>4GB+64GB 金色</p>
+									<p class="price">
+										1399元
+										<del>1499元</del>
+									</p>
+								</div>
+							</li>
+							<li class="p5">
+								<div class="intro">
+									<img src="img/pms_1526382930.05912082.png">
+									<h3>小米路由器 HD 黑色</h3>
+									<p>智能家庭中心 内置1TB硬盘</p>
+									<p class="price">
+										1099元
+										<del>1299元</del>
+									</p>
+								</div>
+							</li>
+							<li class="p6">
+								<div class="intro">
+									<img src="img/2dc1c83b-e9d7-908a-ba9e-5acc0d7ec4d2.png">
+									<h3>米家LED随身灯 蓝色</h3>
+									<p>小巧轻便 5级亮度调节</p>
+									<p class="price">
+										1元
+										<del>19.9元</del>
+									</p>
+								</div>
+							</li>
+							<li class="p7">
+								<div class="intro">
+									<img src="img/669e8fb2d4d6bf54b6c23693de05467e.png">
+									<h3>90分旅行箱 1A 20英寸 星空灰 20寸</h3>
+									<p>可随身携带</p>
+									<p class="price">
+										276元
+										<del>299元</del>
+									</p>
+								</div>
+							</li>
+							<li class="p8">
+								<div class="intro">
+									<img src="img/pms_1537841009.0525614.png">
+									<h3>LUCKYME 万福足金祈运珠单颗手链 红色 17CM</h3>
+									<p>意随心动，运转自如</p>
+									<p class="price">
+										319元
+										<del>329元</del>
+									</p>
+								</div>
+							</li>
+							<!--<li class="p9"></li>
+							<li class="p10"></li>
+							<li class="p11"></li>
+							<li class="p12"></li>
+							<li class="p13"></li>
+							<li class="p14"></li>
+							<li class="p15"></li>
+							<li class="p16"></li>
+							<li class="p17"></li>
+							<li class="p18"></li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--以上是闪购-->
+			<div class="ad">
+				<img src="img/xmad_15471739714866_ZQWjM.jpg">
+			</div>
+		</div>
+
+		<!--以下是所有产品-->
+		<div class="product">
+			<div class="container">
+				<div class="title">
+					<h2>手机</h2>
+				</div>
+				<div class="mobile">
+					<div class="leftad">
+						<img src="img/xmad_1544580545953_UvEXK.jpg">
+					</div>
+					<div class="mobpresent">
+						<div class="mob1" onmouseover="mOver(this)" onmouseleave="mOut(this)">
+							<div class="mob">
+								<img src="img/pms_1537323963.1278763!220x220.jpg">
+								<h3>小米8 青春版 4GB+64GB</h3>
+								<p>潮流镜面渐变色，2400万自拍旗舰</p>
+								<p class="price">1399 元</p>
+							</div>
+							<div class="comment com1">
+								<span class="context">钱包你怎么了，快醒醒，钱没了！</span><br />
+								<span class="username">
+									来自于&nbsp;路明非&nbsp;的评价
+										</span>
+							</div>
+						</div>
+
+						<div class="mob2" onmouseover="mOver(this)" onmouseout="mOut(this)">
+							<div class="mob">
+								<img src="img/pms_1545457703.71734471!220x220.png">
+								<h3>小米Play</h3>
+								<p>内置每月10GB高速流量，流光渐变</p>
+								<p class="price">1099元</p>
+							</div>
+
+							<div class="comment com2">
+								<span class="context">钱包你怎么了，快醒醒，钱没了！</span><br />
+								<span class="username">
+									    来自于&nbsp;路明非&nbsp;的评价
+								    </span>
+							</div>
+						</div>
+
+						<div class="mob3" onmouseover="mOver(this)" onmouseout="mOut(this)">
+							<div class="mob">
+								<img src="img/pms_1527685277.65255600!220x220.jpg">
+								<h3>小米8 SE 6GB+64GB</h3>
+								<p>内置每月10GB高速流量，流光渐变</p>
+								<p class="price">
+									1699元
+									<del>1999元</del>
+								</p>
+							</div>
+
+							<div class="comment com3">
+								<span class="context">钱包你怎么了，快醒醒，钱没了！</span><br />
+								<span class="username">
+									来自于&nbsp;路明非&nbsp;的评价
+								</span>
+							</div>
+						</div>
+
+						<div class="mob4" onmouseover="mOver(this)" onmouseout="mOut(this)">
+							<div class="mob">
+								<img src="img/pms_1522033932.08715351.png">
+								<h3>小米MIX 2S 8GB+256GB</h3>
+								<p>骁龙845 年度旗舰处理器，陶瓷机身</p>
+								<p class="price">
+									3399 元
+									<del>3999元</del>
+								</p>
+							</div>
+
+							<div class="comment com4">
+								<span class="context">钱包你怎么了，快醒醒，钱没了！</span><br />
+								<span class="username">
+									来自于&nbsp;路明非&nbsp;的评价
+								</span>
+							</div>
+						</div>
+
+						<div class="mob5" onmouseover="mOver(this)" onmouseout="mOut(this)">
+							<div class="mob">
+								<img src="img/pms_1524621350.77238418!220x220.jpg">
+								<h3>小米6X 6GB+128GB</h3>
+								<p>轻薄美观的拍照手机</p>
+								<p class="price">
+									1499 元
+									<del>1999元</del>
+								</p>
+							</div>
+
+							<div class="comment com5">
+								<span class="context">钱包你怎么了，快醒醒，钱没了！</span><br />
+								<span class="username">
+									来自于&nbsp;路明非&nbsp;的评价
+								</span>
+							</div>
+						</div>
+
+						<div class="mob6" onmouseover="mOver(this)" onmouseout="mOut(this)">
+							<div class="mob">
+								<img src="img/pms_1531878001.22998509!220x220.jpg">
+								<h3>小米Max 3 4GB+64GB</h3>
+								<p></p>
+								<p class="price">
+									1599元
+									<del>1699元</del>
+								</p>
+							</div>
+
+							<div class="comment com6">
+								<span class="context">钱包你怎么了，快醒醒，钱没了！</span><br />
+								<span class="username">
+									来自于&nbsp;路明非&nbsp;的评价
+								</span>
+							</div>
+						</div>
+
+						<div class="mob7" onmouseover="mOver(this)" onmouseout="mOut(this)">
+							<div class="mob">
+								<img src="img/pms_1522033932.08715351.png">
+								<h3>红米6 Pro</h3>
+								<p>高颜值大电量 红米旗舰</p>
+								<p class="price">
+									1029 元
+									<del>1299元</del>
+								</p>
+							</div>
+
+							<div class="comment com7">
+								<span class="context">钱包你怎么了，快醒醒，钱没了！</span><br />
+								<span class="username">
+									来自于&nbsp;路明非&nbsp;的评价
+								</span>
+							</div>
+						</div>
+
+						<div class="mob8" onmouseover="mOver(this)" onmouseout="mOut(this)">
+							<div class="mob">
+								<img src="img/pms_1528719461.20891365!220x220.jpg">
+								<h3>红米6A 2GB+16GB</h3>
+								<p></p>
+								<p class="price">
+									549元
+									<del>599元</del>
+								</p>
+							</div>
+
+							<div class="comment com8">
+								<span class="context">钱包你怎么了，快醒醒，钱没了！</span><br />
+								<span class="username">
+										来自于&nbsp;路明非&nbsp;的评价
+									</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ad2">
+					<img src="img/xmad_15471302447392_lWdEk.jpg">
+				</div>
+				<div class="title">
+					<h2>为你推荐</h2>
+					<div class="more">
+						<div>
+							<i id="forward" class="fa fa-chevron-left forwardBtn" aria-hidden="true" onclick="forwardRecom()"></i>
+						</div>
+						<div>
+							<i id="backward" class="fa fa-chevron-right backwardBtn sty" aria-hidden="true" onclick="backwardRecom()"></i>
+						</div>
+					</div>
+				</div>
+				<div class="recommend">
+					<ul>
+						<li>
+							<div class="intro1">
+								<img src="img/7c59c959d89a30ed227e8111e9e896d7.png">
+								<h3>最生活毛巾•Air（10条装）白色</h3>
+								<p>超值家庭装 轻柔速干</p>
+								<p class="price">
+									69元
+									<del>169元</del>
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="intro1">
+								<img src="img/ef88f3b004a4ca83b672896925e3d9fe.png">
+								<h3>小米平板4 8英寸 WIFI版 </h3>
+								<p>4GB+64GB 金色</p>
+								<p class="price">
+									1299元
+									<del>1399元</del>
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="intro1">
+								<img src="img/pms_1522033932.08715351.png">
+								<h3>小米MIX 2S 6GB+64GB 白色</h3>
+								<p>陶瓷机身 手机中的艺术品</p>
+								<p class="price">
+									2399元
+									<del>3299元</del>
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="intro1">
+								<img src="img/ef88f3b004a4ca83b672896925e3d9fe.png">
+								<h3>小米平板4 8英寸 LTE版 </h3>
+								<p>4GB+64GB 金色</p>
+								<p class="price">
+									1399元
+									<del>1499元</del>
+								</p>
+							</div>
+						</li>
+						<li style="margin-right: 0;">
+							<div class="intro1">
+								<img src="img/pms_1526382930.05912082.png">
+								<h3>小米路由器 HD 黑色</h3>
+								<p>智能家庭中心 内置1TB硬盘</p>
+								<p class="price">
+									1099元
+									<del>1299元</del>
+								</p>
+							</div>
+						</li>
+						<li class="hid">
+							<div class="intro1">
+								<img src="img/ef88f3b004a4ca83b672896925e3d9fe.png">
+								<h3>小米平板4 8英寸 WIFI版 </h3>
+								<p>4GB+64GB 金色</p>
+								<p class="price">
+									1299元
+									<del>1399元</del>
+								</p>
+							</div>
+						</li>
+						<li class="hid">
+							<div class="intro1">
+								<img src="img/pms_1526382930.05912082.png">
+								<h3>小米路由器 HD 黑色</h3>
+								<p>智能家庭中心 内置1TB硬盘</p>
+								<p class="price">
+									1099元
+									<del>1299元</del>
+								</p>
+							</div>
+						</li>
+						<li class="hid">
+							<div class="intro1">
+								<img src="img/2dc1c83b-e9d7-908a-ba9e-5acc0d7ec4d2.png">
+								<h3>米家LED随身灯 蓝色</h3>
+								<p>小巧轻便 5级亮度调节</p>
+								<p class="price">
+									1元
+									<del>19.9元</del>
+								</p>
+							</div>
+						</li>
+						<li class="hid">
+							<div class="intro1">
+								<img src="img/669e8fb2d4d6bf54b6c23693de05467e.png">
+								<h3>90分旅行箱 1A 星空灰 20寸</h3>
+								<p>可随身携带</p>
+								<p class="price">
+									276元
+									<del>299元</del>
+								</p>
+							</div>
+						</li>
+						<li class="hid" style="margin-right: 0;">
+							<div class="intro1">
+								<img src="img/pms_1537841009.0525614.png">
+								<h3>LUCKYME 万福足金祈运珠单颗手链 红色 17CM</h3>
+								<p>意随心动，运转自如</p>
+								<p class="price">
+									319元
+									<del>329元</del>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="title">
+					<h2>热评产品</h2>
+				</div>
+				<div class="hotcomment">
+					<ul>
+						<li>
+							<div class="commentpic">
+								<img src="img/comment1.jpg">
+							</div>
+							<p>包装很让人感动，式样也很可爱，做出的饭全家人都爱吃，超爱五星！手机控制还是不太熟练，最主要是没有连接...</p>
+							<p class="author">
+								来自于 HZG 的评价
+							</p>
+							<div class="detail">
+								<h3>米家压力IH电饭煲</h3>
+								<span>|</span>
+								<p class="price" style="display:inline; margin:0;">850元</p>
+							</div>
+						</li>
+						<li style="margin-left: 14px;">
+							<div class="commentpic">
+								<img src="img/comment.jpg">
+							</div>
+							<p>非常可爱，一拿到小宝宝还没享受，一帮大宝宝先high了一把，同事也想买，希望早点大卖</p>
+							<p class="author">
+								来自于 秘密 的评价
+							</p>
+							<div class="detail">
+								<h3>米兔智能故事机</h3>
+								<span>|</span>
+								<p class="price" style="display:inline; margin:0;">189元</p>
+							</div>
+						</li>
+						<li style="margin-left: 14px;">
+							<div class="commentpic">
+								<img src="img/comment3.jpg">
+							</div>
+							<p>非常好用，孩子使用防止沉迷于电话影响学习。做工很好，定位基本准确，通话清晰。如果加入时间显示就更完美...</p>
+							<p class="author">
+								来自于 178576259 的评价
+							</p>
+							<div class="detail">
+								<h3>米兔定位电话</h3>
+								<span>|</span>
+								<p class="price" style="display:inline; margin:0;">149元</p>
+							</div>
+						</li>
+						<li style="margin-left: 14px;">
+							<div class="commentpic">
+								<img src="img/comment4.jpg">
+							</div>
+							<p>外形简洁大方，大爱小米！全家人都在用小米的产品，真心不错，最主要的是性价比高。附图，给客服妹子一个大...</p>
+							<p class="author">
+								来自于 酸小妞～！ 的评价
+							</p>
+							<div class="detail">
+								<h3>米家车载空气净化器 灰色</h3>
+								<span>|</span>
+								<p class="price" style="display:inline; margin:0;">449元</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="title">
+					<h2>内容</h2>
+				</div>
+				<div class="other">
+					<div id="Carousel1" class="carousel slide" style="margin-left:0;">
+						<!-- 轮播（Carousel）指标 -->
+						<ol class="carousel-indicators" style="margin-left:-15px!important;">
+							<li data-target="#Carousel1" data-slide-to="0" class="active"></li>
+							<li data-target="#Carousel1" data-slide-to="1"></li>
+						</ol>
+						<!-- 轮播（Carousel）项目 -->
+						<div class="carousel-inner" style="height:420px">
+							<div class="item active" style="height:420px">
+								<div class="othercontent">
+									<h2 class="othercontenttitle">图书</h2>
+									<div class="inothercontent">
+										<h4>哈利·波特与被诅咒的孩子</h4>
+										<p class="desc">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
+										<p class="price">29.37元</p>
+										<div class="inothercontentpic">
+											<img src="img/5e5da924-84e3-4959-9e25-5891cdf30757.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item" style="height:420px">
+								<div class="othercontent">
+									<h2 class="othercontenttitle">图书</h2>
+									<div class="inothercontent">
+										<h4>好吗好的</h4>
+										<p class="desc">畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
+										<p class="price">17.99元</p>
+										<div class="inothercontentpic">
+											<img src="img/61e1385e-54de-48f3-8717-5e4f4b1cdd14.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 轮播（Carousel）导航 -->
+						<a class="left carousel-control" href="#Carousel1" role="button" data-slide="prev" style="margin-left:0;">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#Carousel1" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+					<div id="Carousel2" class="carousel slide">
+						<!-- 轮播（Carousel）指标 -->
+						<ol class="carousel-indicators" style="margin-left:-15px!important;">
+							<li data-target="#Carousel2" data-slide-to="0" class="active"></li>
+							<li data-target="#Carousel2" data-slide-to="1"></li>
+						</ol>
+						<!-- 轮播（Carousel）项目 -->
+						<div class="carousel-inner" style="height:420px">
+							<div class="item active" style="height:420px">
+								<div class="othercontent">
+									<h2 class="othercontenttitle">图书</h2>
+									<div class="inothercontent">
+										<h4>哈利·波特与被诅咒的孩子</h4>
+										<p class="desc">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
+										<p class="price">29.37元</p>
+										<div class="inothercontentpic">
+											<img src="img/5e5da924-84e3-4959-9e25-5891cdf30757.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item" style="height:420px">
+								<div class="othercontent">
+									<h2 class="othercontenttitle">图书</h2>
+									<div class="inothercontent">
+										<h4>好吗好的</h4>
+										<p class="desc">畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
+										<p class="price">17.99元</p>
+										<div class="inothercontentpic">
+											<img src="img/61e1385e-54de-48f3-8717-5e4f4b1cdd14.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 轮播（Carousel）导航 -->
+						<a class="left carousel-control" href="#Carousel2" role="button" data-slide="prev" style="margin-left:0;">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#Carousel2" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+					<div id="Carousel3" class="carousel slide">
+						<!-- 轮播（Carousel）指标 -->
+						<ol class="carousel-indicators" style="margin-left:-15px!important;">
+							<li data-target="#Carousel3" data-slide-to="0" class="active"></li>
+							<li data-target="#Carousel3" data-slide-to="1"></li>
+						</ol>
+						<!-- 轮播（Carousel）项目 -->
+						<div class="carousel-inner" style="height:420px">
+							<div class="item active" style="height:420px">
+								<div class="othercontent">
+									<h2 class="othercontenttitle">图书</h2>
+									<div class="inothercontent">
+										<h4>哈利·波特与被诅咒的孩子</h4>
+										<p class="desc">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
+										<p class="price">29.37元</p>
+										<div class="inothercontentpic">
+											<img src="img/5e5da924-84e3-4959-9e25-5891cdf30757.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item" style="height:420px">
+								<div class="othercontent">
+									<h2 class="othercontenttitle">图书</h2>
+									<div class="inothercontent">
+										<h4>好吗好的</h4>
+										<p class="desc">畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
+										<p class="price">17.99元</p>
+										<div class="inothercontentpic">
+											<img src="img/61e1385e-54de-48f3-8717-5e4f4b1cdd14.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 轮播（Carousel）导航 -->
+						<a class="left carousel-control" href="#Carousel3" role="button" data-slide="prev" style="margin-left:0;">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#Carousel3" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+					<div id="Carousel4" class="carousel slide">
+						<!-- 轮播（Carousel）指标 -->
+						<ol class="carousel-indicators" style="margin-left:-15px!important;">
+							<li data-target="#Carousel4" data-slide-to="0" class="active"></li>
+							<li data-target="#Carousel4" data-slide-to="1"></li>
+						</ol>
+						<!-- 轮播（Carousel）项目 -->
+						<div class="carousel-inner" style="height:420px">
+							<div class="item active" style="height:420px">
+								<div class="othercontent">
+									<h2 class="othercontenttitle">图书</h2>
+									<div class="inothercontent">
+										<h4>哈利·波特与被诅咒的孩子</h4>
+										<p class="desc">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
+										<p class="price">29.37元</p>
+										<div class="inothercontentpic">
+											<img src="img/5e5da924-84e3-4959-9e25-5891cdf30757.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item" style="height:420px">
+								<div class="othercontent">
+									<h2 class="othercontenttitle">图书</h2>
+									<div class="inothercontent">
+										<h4>好吗好的</h4>
+										<p class="desc">畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
+										<p class="price">17.99元</p>
+										<div class="inothercontentpic">
+											<img src="img/61e1385e-54de-48f3-8717-5e4f4b1cdd14.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 轮播（Carousel）导航 -->
+						<a class="left carousel-control" href="#Carousel4" role="button" data-slide="prev" style="margin-left:0;">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#Carousel4" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<div class="bar">
+			<ul>
+				
+			</ul>-->
+		</div>
+		<div class="sitefooter">
+			<div class="container">
+				<div class="service">
+					<ul>
+						<li style="border-left: 0;">
+							<a href="//www.mi.com/static/fast/" target="_blank">
+								<i class="fa fa-wrench" aria-hidden="true"></i>&nbsp;预约维修服务
+							</a>
+						</li>
+						<li>
+							<a href="//www.mi.com/service/exchange#back" target="_blank">
+								<i class="fa fa-repeat" aria-hidden="true"></i>&nbsp;七天无理由退货
+							</a>
+						</li>
+						<li>
+							<a href="//www.mi.com/service/exchange#back" target="_blank">
+								<i class="fa fa-exchange" aria-hidden="true"></i>&nbsp;十五天免费换货
+							</a>
+						</li>
+						<li>
+							<a href="//www.mi.com/service/buy/postage/" target="_blank">
+								<i class="fa fa-gift" aria-hidden="true"></i>&nbsp;满150元包邮
+							</a>
+						</li>
+						<li>
+							<a href="//www.mi.com/static/maintainlocation/" target="_blank">
+								<i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;520余家售后网点
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="link">
+					<dl>
+						<dt>帮助中心</dt>
+						<dd>
+							<a href="//www.mi.com/service/account/Account%20registration/" target="_blank">账户管理</a>
+						</dd>
+						<dd>
+							<a href="//www.mi.com/service/buy/SalesTime/" target="_blank">购物指南</a>
+						</dd>
+						<dd>
+							<a href="//www.mi.com/service/buy/SalesTime/" target="_blank">订单操作</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>服务支持</dt>
+						<dd>
+							<a href="" target="_blank">售后政策</a>
+						</dd>
+						<dd>
+							<a href="" target="_blank">自助服务</a>
+						</dd>
+						<dd>
+							<a href="" target="_blank">相关政策</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>线下门店</dt>
+						<dd>
+							<a href="" target="_blank">小米之家</a>
+						</dd>
+						<dd>
+							<a href="" target="_blank">服务网点</a>
+						</dd>
+						<dd>
+							<a href="" target="_blank">授权体验店</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>关于小米</dt>
+						<dd>
+							<a href="" target="_blank">了解小米</a>
+						</dd>
+						<dd>
+							<a href="" target="_blank">加入小米</a>
+						</dd>
+						<dd>
+							<a href="" target="_blank">投资者关系</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>关注我们</dt>
+						<dd>
+							<a href="" target="_blank">新浪微博</a>
+						</dd>
+						<dd>
+							<a href="" target="_blank">官方微信</a>
+						</dd>
+						<dd>
+							<a href="" target="_blank">联系我们</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>特色服务</dt>
+						<dd>
+							<a href="" target="_blank">F码通道</a>
+						</dd>
+						<dd>
+							<a href="" target="_blank">礼物码</a>
+						</dd>
+						<dd>
+							<a href="" target="_blank">防伪查询</a>
+						</dd>
+					</dl>
+					<div class="contact">
+						<p class="phone">400-100-5678</p>
+						<p class="tip">
+							周一至周日 8:00-18:00<br>（仅收市话费）
+						</p>
+						<div class="contactbtn">
+							<i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;联系客服
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="siteend">
+			<div class="container">
+				<div class="logo"></div>
+				<div class="endinfo">
+					<p class="sites">
+						<a href="//www.mi.com/index.html" target="_blank">小米商城</a>
+						<span>|</span>
+						<a href="https://www.miui.com/" target="_blank">MIUI</a>
+						<span>|</span>
+						<a href="https://home.mi.com/index.html" target="_blank">米家</a>
+						<span>|</span>
+						<a href="http://www.miliao.com/" target="_blank">米聊</a>
+						<span>|</span>
+						<a href="https://www.duokan.com/" target="_blank">多看</a>
+						<span>|</span>
+						<a href="http://game.xiaomi.com/" target="_blank">游戏</a>
+						<span>|</span>
+						<a href="http://www.miwifi.com/" target="_blank">路由器</a>
+						<span>|</span>
+						<a href="//www.mi.com/micard/" target="_blank">政企服务</a>
+						<span>|</span>
+						<a href="https://xiaomi.tmall.com/" target="_blank">小米天猫店</a>
+						<span>|</span>
+						<a href="//www.mi.com/about/privacy/" target="_blank">隐私政策</a>
+						<span>|</span>
+						<a href="//www.mi.com/about/user-agreement/" target="_blank">商城用户协议</a>
+						<span>|</span>
+						<a href="//static.account.xiaomi.com/html/agreement/account/cn.html" target="_blank">账号协议</a>
+						<span>|</span>
+						<a href="https://static.mi.com/feedback/" target="_blank">问题反馈</a>
+						<span>|</span>
+						<a href="//www.mi.com/jiancha/" target="_blank">廉正举报</a>
+						<span>|</span>
+						<a href="https://integrity.mi.com/" target="_blank">诚信合规</a>
+						<span>|</span>
+						<a href="">Select Region</a>
+					</p>
+					<p class="license">©
+						<a href=" " target="_blank">mi.com</a> 京ICP证110507号
+						<a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备10046444号</a>
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134" target="_blank">京公网安备11010802020134号 </a>
+						<a href="//www.mi.com/culture-license/" target="_blank">京网文[2017]1530-131号</a> <br>
+						<a href="//www.mi.com/medical/record/" target="_blank">（京）网械平台备字（2018）第00005号
+						</a>
+						<a href="//www.mi.com/medical/qualification/" target="_blank">互联网药品信息服务资格证 (京) -非经营性-2014-0090
+						</a>
+						<a href="//www.mi.com/business-license/" target="_blank">营业执照</a>
+						<a href="//www.mi.com/medical/list/" target="_blank">医疗器械公告</a>
+						<br>
+						<a href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/af5b8ef38e7d57c5ee7fa4289ccf4df8.png" target="_blank">增值电信业务许可证</a> &nbsp; 网络食品经营备案（京）【2018】WLSPJYBAHF-12 &nbsp;
+						<a href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/fe7383e11127caea371f17156f429a1e.png" target="_blank">食品经营许可证</a>
+						<br>违法和不良信息举报电话：185-0130-1238
+						<a href="https://www.mi.com/static/intellectual/index.html" target="_blank">知识产权侵权投诉</a>
+						本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+				</div>
+				<div style="height: 28px;margin: 4px 0 0;padding-left: 67px;"></div>
+				<div class="slogan">探索黑科技，小米为发烧而生</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
